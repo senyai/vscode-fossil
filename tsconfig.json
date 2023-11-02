@@ -4,8 +4,10 @@
         "target": "es2018",
         "lib": [
             "es6",
-            "es2018"
+            "es2018",
+            "dom"
         ],
+        "esModuleInterop": true,
         "noImplicitOverride": true,
         "noImplicitThis": true,
         "module": "commonjs",

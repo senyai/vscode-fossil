@@ -1063,7 +1063,19 @@
                     }
                 ]
             }
-        ]
+        ],
+        "views": {
+            "scm": [
+                {
+                    "type": "webview",
+                    "id": "fossil.pikchr",
+                    "name": "Pikchr",
+                    "when": "fossilOpenRepositoryCount ",
+                    "contextualTitle": "Pikchr",
+                    "icon": "$(trash)"
+                }
+            ]
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run esbuild-base -- --minify && npm run esbuild-preview -- --minify",
@@ -1081,6 +1093,7 @@
         "esbuild": "npm run esbuild-base -- --sourcemap"
     },
     "dependencies": {
+        "@vscode/webview-ui-toolkit": "^1.2.2",
         "vscode-nls": "^5.0.1"
     },
     "devDependencies": {
